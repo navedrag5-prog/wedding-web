@@ -1,0 +1,7 @@
+{
+  "packages": [
+    {"name":"Paket Rose","price":"10000000","description":"Intimate wedding, dekor sederhana, fotografer 4 jam."},
+    {"name":"Paket Lily","price":"25000000","description":"Konsep penuh, rias, dekor, dokumentasi lengkap."},
+    {"name":"Paket Arunika","price":"45000000","description":"All-in package: venue, catering, entertainment, dan dokumentasi."}
+  ]
+}

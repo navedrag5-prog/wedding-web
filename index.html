@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Arunika Wedding</title>
+  <!-- Fonts: Playfair Display (headings) + Montserrat (body) -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- admin toolbar (visible only in admin mode) -->
+  <div class="admin-toolbar admin-only" role="region" aria-label="Admin toolbar">
+    <span class="admin-badge">ADMIN MODE</span>
+    <a href="dashboard/index.html">Dashboard</a>
+    <a href="dashboard/manage-packages.html">Kelola Paket</a>
+    <a href="dashboard/manage-bookings.html">Kelola Booking</a>
+    <a href="dashboard/manage-gallery.html">Galeri</a>
+    <a href="dashboard/manage-testimonials.html">Testimoni</a>
+    <a href="dashboard/manage-admins.html">Kelola Admin</a>
+    <a href="#" class="admin-logout">Nonaktifkan Admin</a>
+    <a href="#" class="admin-enable" style="display:none">Enable Admin</a>
+  </div>
+
+  <!-- header/navbar component -->
+  <header id="site-header">
+    <!-- navbar will be included here when using templating; kept as placeholder -->
+    <nav class="nav">
+      <div class="brand">Arunika Wedding</div>
+      <button class="nav-toggle" aria-label="toggle navigation">☰</button>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#packages">Paket</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-inner container">
+      <h1 class="hero-title">Arunika Wedding</h1>
+      <p class="hero-sub">Momen indah, ditata elegan dengan sentuhan gold</p>
+      <a class="btn btn-gold" href="pages/contact.html">Pesan Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Highlight Keunggulan -->
+  <section class="features container" id="features">
+    <h2 class="section-title">Keunggulan Arunika</h2>
+    <div class="grid-3">
+      <article class="card">
+        <h3>Layanan Premium</h3>
+        <p>Tim profesional yang mendetail dari konsep hingga realisasi.</p>
+      </article>
+      <article class="card">
+        <h3>Desain Elegan</h3>
+        <p>Estetika gold–white yang klasik dan mewah untuk hari istimewa.</p>
+      </article>
+      <article class="card">
+        <h3>Harga Transparan</h3>
+        <p>Paket jelas dan opsi kustom tanpa biaya tersembunyi.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- Paket Singkat -->
+  <section class="packages container" id="packages">
+    <h2 class="section-title">Paket Unggulan</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Paket Rose</h3>
+        <p class="price">Rp 10.000.000</p>
+        <p>Intimate, dekor sederhana, fotografer 4 jam.</p>
+      </div>
+      <div class="card">
+        <h3>Paket Lily</h3>
+        <p class="price">Rp 25.000.000</p>
+        <p>Konsep penuh + rias + dokumentasi lengkap.</p>
+      </div>
+      <div class="card">
+        <h3>Paket Arunika</h3>
+        <p class="price">Rp 45.000.000</p>
+        <p>All-in, venue, dekor, catering, entertainment, dan dokumentasi.</p>
+      </div>
+    </div>
+    <p class="more"><a href="pages/services.html">Lihat semua paket &raquo;</a></p>
+  </section>
+
+  <!-- Preview Portfolio -->
+  <section id="portfolio" class="container portfolio">
+    <h2 class="section-title">Preview Portfolio</h2>
+    <div class="grid-3 gallery">
+      <figure class="gallery-item"><img src="assets/images/portfolio1.jpg" alt="Portfolio 1"><figcaption>Elegant Ceremony</figcaption></figure>
+      <figure class="gallery-item"><img src="assets/images/portfolio2.jpg" alt="Portfolio 2"><figcaption>Reception Decor</figcaption></figure>
+      <figure class="gallery-item"><img src="assets/images/portfolio3.jpg" alt="Portfolio 3"><figcaption>Couple Portrait</figcaption></figure>
+    </div>
+    <p class="more"><a href="pages/portfolio.html">Lihat Galeri Lengkap &raquo;</a></p>
+  </section>
+
+  <!-- Testimoni singkat -->
+  <section class="testimonials container">
+    <h2 class="section-title">Testimoni</h2>
+    <div class="grid-3">
+      <blockquote class="card">"Pelayanan ramah dan hasilnya luar biasa." <cite>— Siti</cite></blockquote>
+      <blockquote class="card">"Dekor sempurna, tamu terkesan." <cite>— Budi</cite></blockquote>
+      <blockquote class="card">"Koordinasi mudah dan profesional." <cite>— Lina</cite></blockquote>
+    </div>
+  </section>
+
+  <!-- CTA WhatsApp -->
+  <section class="cta container">
+    <h3>Siap memulai perencanaan?</h3>
+    <a class="btn btn-gold" href="https://wa.me/6281234567890?text=Halo%20Arunika%20Wedding,%20saya%20ingin%20mengetahui%20paket">Chat via WhatsApp</a>
+  </section>
+
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Arunika Wedding. Semua hak dilindungi.</p>
+    </div>
+  </footer>
+
+  <script src="js/animation.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/admin-ui.js"></script>
+  <script>
+    // set current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
